@@ -42,7 +42,7 @@ void callback(char* topic, byte* payload, unsigned int length) {
 void reconnect() {
   while (!client.connected()) {
     Serial.print("Attempting MQTT connection...");
-    if (client.connect("clientid")) {
+    if (client.connect(clientid)) {
       Serial.println("connected");
       client.subscribe("CIATEQ/IOT/LED");
     } else {
