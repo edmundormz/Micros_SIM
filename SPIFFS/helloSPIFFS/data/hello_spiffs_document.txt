@@ -1,0 +1,1 @@
+El sistema SPIFFS funciona. Saludos desde Guadalajara
